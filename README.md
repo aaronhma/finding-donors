@@ -49,21 +49,68 @@ $ jupyter lab
 <a name = "writeup" />
 
 ## Writeup
+### 0. Preparation Work
+#### Installing Packages
+Before we begin the project, we must install all the packages. Follow along to get your own copy of the packages used in this project.
 
-### 
-
-
-```python
+```bash
+# If you're in the Terminal:
+$ pip install -r requirements.txt
+# Or if you're in Jupyter:
+!pip install -r requirements.txt
 ```
 
-### 
-
+#### Loading Packages
+After installing the packages we must load it for the project.
 
 ```python
+# Import libraries necessary for this project
+import numpy as np
+import pandas as pd
+from time import time
+from IPython.display import display # Allows the use of display() for DataFrames
 
+# Import supplementary visualization code visuals.py
+import visuals as vs
 ```
 
-![Loading...](https://raw.githubusercontent.com/firebolt-space/atlas/master/svg/loader/material.svg) Loading...
+### 1. Exploring the Data
+#### Install the data
+In order to install the data, please sign in to your classroom to install it.
+
+#### Load the data
+Assuming you've installed the data, we'll load the data with [Pandas](pandas.pydata.org).
+
+```python
+# Load the Census dataset
+data = pd.read_csv("census.csv")
+
+# Success - Display the first record
+display(data.head(n=1))
+```
+
+#### Data Exploration
+Now, it's time to actually start the project!
+
+```python
+# TODO: Total number of records
+n_records = None
+
+# TODO: Number of records where individual's income is more than $50,000
+n_greater_50k = None
+
+# TODO: Number of records where individual's income is at most $50,000
+n_at_most_50k = None
+
+# TODO: Percentage of individuals whose income is more than $50,000
+greater_percent = None
+
+# Print the results
+print("Total number of records: {}".format(n_records))
+print("Individuals making more than $50,000: {}".format(n_greater_50k))
+print("Individuals making at most $50,000: {}".format(n_at_most_50k))
+print("Percentage of individuals making more than $50,000: {}%".format(greater_percent))
+```
 
 <a name = "files" />
 
@@ -72,7 +119,19 @@ $ jupyter lab
 Here's the current, up-to-date, file structure for this project:
 
 ```
-Failed to load from gittree.firebolt.ai/aaronhma/finding-donors/tree.txt
+|____CODE_OF_CONDUCT.md
+|____LICENSE
+|____requirements.txt
+|____finding_donors.ipynb
+|____README.md
+|____.gitignore
+|____.github
+| |____FUNDING.yml
+| |____workflows
+| | |____stale.yml
+| | |____greetings.yml
+|____visuals.py
+|____SECURITY.md
 ```
 
 <a name = "libraries" />

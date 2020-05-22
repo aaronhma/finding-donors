@@ -1,4 +1,9 @@
 # Intro to ML with TensorFlow: Finding Donors
+![Mark stale issues and pull requests](https://github.com/aaronhma/finding-donors/workflows/Mark%20stale%20issues%20and%20pull%20requests/badge.svg?branch=master)
+![Website Status](https://img.shields.io/badge/website-passing-brightgreen)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Project Status](https://img.shields.io/badge/project-in--review-orange)
+
 This repository contains code submitted for Udacity's Intro to ML with TensorFlow - Project 1: Finding Donors
 
 ## Contents

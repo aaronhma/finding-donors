@@ -1,0 +1,3 @@
+# Source: https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/meta_windows_patch.yml
+build:
+  ignore_prefix_files: True

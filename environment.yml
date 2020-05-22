@@ -1,0 +1,15 @@
+name: aaronhma_finding_donors
+channels:
+    - https://conda.anaconda.org/menpo
+    - conda-forge
+dependencies:
+    - python
+    - pip
+    - jupyter
+    - numpy
+    - pandas
+    - matplotlib
+    - scikit-learn
+    - pip:
+        - jupyterlab
+        - ipyparallel
